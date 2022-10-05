@@ -1,8 +1,6 @@
 import { createStackNavigator } from "react-navigation-stack";
-import { createAppContainer } from "react-navigation";
 import Home from "../screens/home";
 import Review from "../screens/review";
-import About from "../screens/about";
 
 const screens = {
   Home: {
@@ -18,9 +16,6 @@ const screens = {
       title: "Reviews Page",
     },
   },
-  About: {
-    screen: About,
-  },
 };
 
 const HomeStack = createStackNavigator(screens, {
@@ -30,4 +25,4 @@ const HomeStack = createStackNavigator(screens, {
   },
 });
 
-export default createAppContainer(HomeStack);
+export default HomeStack;
